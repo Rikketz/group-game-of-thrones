@@ -1,0 +1,39 @@
+.houses {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ajusta la altura según sea necesario */
+    background-color: #f0f0f0; /* Color de fondo de la pantalla */
+  }
+  
+  /* Estilo para cada casa */
+  .house {
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Estilo para la imagen de la casa */
+  .house-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Estilo para el nombre de la casa */
+  .house-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  /* Estilo para los detalles de la casa */
+  .house-details {
+    margin-top: 20px;
+  }
+  
+  /* Estilo para los detalles de cada elemento (settlement, region, etc.) */
+  .house-details div {
+    margin: 5px 0;
+  }
