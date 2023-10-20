@@ -1,12 +1,18 @@
-import logo from './logo.svg';
+
 import './App.css';
+// import Gallery from './Gallery';
+import CharacterPages from './CharactersPage/CharactersPage';
+import DetailsHousesPage from './DetailsHousesPage/DetailsHousesPage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        
+    <div>
+      <header >
       </header>
+      <main>
+      <CharacterPages/>
+      <DetailsHousesPage/>
+      </main>
     </div>
   );
 }
