@@ -1,0 +1,95 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "got";
+    src: url(../../../public/assets/GameofThrones.ttf);
+}
+
+*{
+    background-color: black;
+}
+
+.textAndListContainer{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-bottom: 2%;
+}
+
+.listContainer{
+    padding-left: 4.43%;
+    padding-right: 4.43%;
+    width: 91.14%;
+    height: 73.98%;
+    display: flex;
+
+}
+
+.housesList{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: 700px;
+    overflow: auto;
+}
+.housesList::-webkit-scrollbar{
+    width: 10px;
+}
+.housesList::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 10px #453d3d;
+    border-radius: 5px;
+}
+.housesList::-webkit-scrollbar-thumb {
+    background-color: white;
+    outline: 1px solid slategrey;
+    border-radius: 5px;
+}
+
+.housesContainer{
+    display: flex;
+    flex-direction: column;
+    width: 248px;
+    height: 340px;
+    align-items: center
+}
+
+.housesFlags{
+    width: 248px;
+    height: 297.6px;
+}
+
+.housesNames{
+    color: white;
+    font-size: 14px;
+    font-family: "got";
+    font-weight: normal;
+}
+.input {
+    border: none; /* Elimina el borde */
+    border-bottom: 2px solid rgb(245, 245, 242); /* Línea inferior de 2 píxeles de ancho en color amarillo */
+    background-color: black; /* Fondo negro */
+    color: white; /* Texto blanco */
+
+    margin-left: 6.7%;
+    font-family: "got";
+    height: 25px;
+}
+
+.input::-moz-placeholder {
+    font-size: 18px;
+
+}
+
+.input::placeholder {
+    font-size: 18px;
+}
+
+.input::before {
+    content: "\f002"; /* Código Unicode para el icono de lupa de Font Awesome */
+    font-family: "Font Awesome 5 Free";
+    font-size: 16px; /* Tamaño del icono de lupa */
+    position: absolute;
+    left: 4px; /* Posición desde la izquierda */
+    top: 50%; /* Posición verticalmente centrada */
+    transform: translateY(-50%); /* Alineación vertical centrada */
+    color: white; /* Color del icono de lupa */
+}/*# sourceMappingURL=style.css.map */
