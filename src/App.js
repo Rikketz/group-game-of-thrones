@@ -1,13 +1,17 @@
-import logo from './logo.svg';
+
 import './App.css';
+import {Route, Routes, BrowserRouter as Router} from "react-router-dom";
+import HousesPage from './Pages/HousesPage/HousesPage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        
-      </header>
-    </div>
+
+        <Router>
+          <Routes>
+            <Route path="/houses" element={<HousesPage/>} />
+          </Routes>
+        </Router>
+
   );
 }
 

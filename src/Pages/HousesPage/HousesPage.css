@@ -1,0 +1,65 @@
+@font-face {
+    font-family: "got";
+    src: url(../../../public/assets/GameofThrones.ttf);
+}
+
+*{
+    background-color: black;
+}
+
+.textAndListContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2%;
+}
+
+.listContainer{
+    padding-top: 5%;
+    padding-left: 4.43%;
+    padding-right: 4.43%;
+    width: 91.14%;
+    height: 73.98%;
+    display: flex;
+
+}
+
+.housesList{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: 700px;
+    overflow: auto;
+}
+.housesList::-webkit-scrollbar{
+    width: 10px;
+}
+.housesList::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 10px #453d3d;
+    border-radius: 5px;
+}
+.housesList::-webkit-scrollbar-thumb {
+    background-color: white;
+    outline: 1px solid slategrey;
+    border-radius: 5px;
+}
+
+.housesContainer{
+    display: flex;
+    flex-direction: column;
+    width: 248px;
+    height: 340px;
+    align-items: center
+}
+
+.housesFlags{
+    width: 248px;
+    height: 297.6px;
+}
+
+.housesNames{
+    color: white;
+    font-size: 14px;
+    font-family: "got";
+    font-weight: normal;
+}
