@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
     font-family: "got";
     src: url(../../../public/assets/GameofThrones.ttf);
@@ -9,13 +10,12 @@
 
 .textAndListContainer{
     display: flex;
+    align-items: flex-start;
     flex-direction: column;
-    align-items: center;
     padding-bottom: 2%;
 }
 
 .listContainer{
-    padding-top: 5%;
     padding-left: 4.43%;
     padding-right: 4.43%;
     width: 91.14%;
@@ -63,3 +63,33 @@
     font-family: "got";
     font-weight: normal;
 }
+.input {
+    border: none; /* Elimina el borde */
+    border-bottom: 2px solid rgb(245, 245, 242); /* Línea inferior de 2 píxeles de ancho en color amarillo */
+    background-color: black; /* Fondo negro */
+    color: white; /* Texto blanco */
+
+    margin-left: 6.7%;
+    font-family: "got";
+    height: 25px;
+}
+
+.input::-moz-placeholder {
+    font-size: 18px;
+
+}
+
+.input::placeholder {
+    font-size: 18px;
+}
+
+.input::before {
+    content: "\f002"; /* Código Unicode para el icono de lupa de Font Awesome */
+    font-family: "Font Awesome 5 Free";
+    font-size: 16px; /* Tamaño del icono de lupa */
+    position: absolute;
+    left: 4px; /* Posición desde la izquierda */
+    top: 50%; /* Posición verticalmente centrada */
+    transform: translateY(-50%); /* Alineación vertical centrada */
+    color: white; /* Color del icono de lupa */
+}/*# sourceMappingURL=style.css.map */

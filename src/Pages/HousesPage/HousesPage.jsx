@@ -2,11 +2,13 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import "./HousesPage.css"
 import FooterGeneral from "../../Components/FooterGeneral/FooterGeneral";
+import { Link } from "react-router-dom";
 
 
 export default function HousesPage(){
     const [houses, setHouses] = useState([]);
     const [housesFilter, setHousesFilter] = useState([]);
+
     useEffect(() => {
         const getData = async function(){
             try {
@@ -25,10 +27,10 @@ export default function HousesPage(){
     };
     return (<>
         <div className="textAndListContainer">
-            <input type="text" onChange={(e) => filterHouses(e.target.value)}/>
+            <input placeholder="Buscar..." className="input" type="text" onChange={(e) => filterHouses(e.target.value)}/>
             <div className="listContainer">
                 <ul className="housesList">
-                    {housesFilter.map((house) => (<div className="housesContainer" key={house.id}><img className="housesFlags" src={`http://localhost:3020/${house.image}`} alt={house.name}/> <h5 className="housesNames">{house.name}</h5></div>))}
+                    {housesFilter.map((house) => (<div className="housesContainer" key={house.id}><Link to={`/houses/${house.id}`}><img className="housesFlags" src={`http://localhost:3020/${house.image}`} alt={house.name}/></Link> <h5 className="housesNames">{house.name}</h5></div>))}
                 </ul>
             </div>
         </div>

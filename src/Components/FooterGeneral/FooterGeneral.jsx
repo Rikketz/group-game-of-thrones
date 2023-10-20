@@ -8,9 +8,9 @@ export default function FooterGeneral(){
 
 return (<>
     <div className="divLinksFooter">
-        <Link className="casas" to="characters">PERSONAJES</Link>
-        <Link className="casas" to="">CASAS</Link>
-        <Link className="casas" to="cronologia">CRONOLOGIA</Link>
+        <Link className="casas" to="/characters">PERSONAJES</Link>
+        <Link className="casas" to="/houses">CASAS</Link>
+        <Link className="casas" to="/cronologia">CRONOLOGIA</Link>
     </div>
 </>)
 

@@ -8,7 +8,7 @@ export default function DetailsHousesPage() {
   useEffect(() => {
     const getHouses = async () => {
       try {
-        const { data } = await axios.get("http://localhost:3020/houses");
+        const { data } = await axios.get("http://localhost:3020/houses/1");
         console.log(data)
         setHouses(data);
       } catch (error) {
