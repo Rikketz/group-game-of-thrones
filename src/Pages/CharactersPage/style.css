@@ -87,17 +87,6 @@ input::placeholder {
   font-size: 18px;
 }
 
-.input::before {
-  content: "\f002"; /* Código Unicode para el icono de lupa de Font Awesome */
-  font-family: "Font Awesome 5 Free";
-  font-size: 16px; /* Tamaño del icono de lupa */
-  position: absolute;
-  left: 4px; /* Posición desde la izquierda */
-  top: 50%; /* Posición verticalmente centrada */
-  transform: translateY(-50%); /* Alineación vertical centrada */
-  color: white; /* Color del icono de lupa */
-}
-
 
 
 
