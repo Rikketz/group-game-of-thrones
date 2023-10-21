@@ -1,8 +1,10 @@
+import Menu from "../../Components/Menu/Menu";
 import "./Home.css";
 import { useTranslation } from 'react-i18next';
 export default function Home() {
   const { t } = useTranslation();
   return (
+    <><Menu/>
     <div className="homeimg">
       <div>
         <div className="gotletras">
@@ -15,5 +17,6 @@ export default function Home() {
         </div>
       </div>
     </div>
+    </>
   );
 }

@@ -5,6 +5,7 @@ import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 import "./HousesPage.css"
 import FooterGeneral from "../../Components/FooterGeneral/FooterGeneral";
 import { Link } from "react-router-dom";
+import Menu from "../../Components/Menu/Menu";
 
 
 export default function HousesPage(){
@@ -28,6 +29,7 @@ export default function HousesPage(){
         setHousesFilter(filteredHouses)
     };
     return (<>
+     <Menu/>
         <div className="housesTextAndListContainer">
             <div className="housesInput">
                 <FontAwesomeIcon className="housesLupita" icon={faMagnifyingGlass} style={{color: "#ffffff",}} />

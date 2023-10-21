@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./InfoCharacter.css";
 import axios from "axios";
 import { useTranslation } from 'react-i18next';
+import Menu from "../Menu/Menu";
 
 const InfoCharacter = ({
   name,
@@ -46,6 +47,7 @@ const InfoCharacter = ({
 
   },[houses])
   return (
+    <><Menu/>
     <div className="container_all">
     <div className="container_imagename">
             <figure className="img-figure">
@@ -108,6 +110,7 @@ const InfoCharacter = ({
       </div>
       </div>
     </div>
+    </>
   );
 };
 

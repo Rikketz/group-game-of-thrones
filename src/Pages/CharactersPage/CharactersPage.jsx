@@ -8,6 +8,7 @@ import FooterGeneral from "../../Components/FooterGeneral/FooterGeneral";
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Menu from "../../Components/Menu/Menu";
 
 
 export default function CharacterPages() {
@@ -33,7 +34,7 @@ export default function CharacterPages() {
     setCharactersFilter(filteredCharacters);
   };
 
-  return (<>
+  return (<><Menu/>
     <div className="charactersFlexCharacters">
       <div className="charactersInput">
         <FontAwesomeIcon className="charactersLupita" icon={faMagnifyingGlass} style={{color: "#ffffff",}} />
