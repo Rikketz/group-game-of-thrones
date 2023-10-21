@@ -1,44 +1,52 @@
+
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import './styles/styleDetailsH.css';
+import { useParams } from "react-router-dom";
 
-export default function DetailsHousesPage() {
-  const [houses, setHouses] = useState([]);
+function DetailsHousesPage() {
+  const { id } = useParams();
+  const [house, setHouse] = useState({});
 
   useEffect(() => {
-    const getHouses = async () => {
+    const getHouseDetails = async () => {
       try {
-        const { data } = await axios.get("http://localhost:3020/houses/1");
-        console.log(data)
-        setHouses(data);
+        const { data } = await axios.get(`http://localhost:3020/houses/${id}`);
+        setHouse(data);
       } catch (error) {
         console.error(error);
       }
     };
-    getHouses();
-  }, []);
+    getHouseDetails();
+  }, [id]);
 
   return (
-    <div className="houses">
-      {houses.map((house) => (
-        <div key={house.id} className="house">
-          <img
-            className="house-image"
-            src={`http://localhost:3020/${house.image}`}
-            alt={house.name}
-          />
-          <div className="house-info">
-            <h1 className="house-name">{house.name}</h1>
-            <div className="house-details">
-              <h3><strong>Settlement:</strong> {house.settlement}</h3>
-              <h3><strong>Region:</strong> {house.region}</h3>
-              <h3><strong>Alliances:</strong> {house.alliances}</h3>
-              <h3><strong>Religions:</strong> {house.religions}</h3>
-              <h3><strong>Foundation:</strong> {house.foundation}</h3>
-            </div>
+    <div className="Detailshouse">
+      <img
+        className="DetailshouseImage"
+        src={`http://localhost:3020/${house.image}`}
+        alt={house.name}
+      />
+       <h1 className="DetailshouseName">{house.name}</h1>
+        <div className="DetailsHousesInfo">
+        <div>
+          <h3 className="DetailsHousesH3">Settlement: <p className="DetailshousesP">{house.settlement}</p></h3>
+          </div>
+          <div>
+          <h3 className="DetailsHousesH3">Region: <p className="DetailshousesP">{house.region}</p></h3>
+          </div>
+          <div>
+          <h3 className="DetailsHousesH3">Alliances: <p className="DetailshousesP">{house.alliances}</p></h3>
+          </div>
+          <div>
+          <h3 className="DetailsHousesH3">Religions: <p className="DetailshousesP">{house.religions}</p></h3>
+          </div>
+          <div>
+          <h3 className="DetailsHousesH3">Foundation: <p className="DetailshousesP">{house.foundation}</p></h3>
           </div>
         </div>
-      ))}
     </div>
   );
 }
+
+export default DetailsHousesPage;
