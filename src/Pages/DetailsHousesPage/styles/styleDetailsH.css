@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Pacifico&display=swap');
+.Detailshouse {
+  width: 100%;
+  margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Ajusta la altura según sea necesario */
+    background-color: black; /* Color de fondo de la pantalla */
+  }
+  
+  .DetailshouseImage{
+    width: 248px;
+    height: 297px;
+  }
+  .DetailshouseName{
+    font-family: 'got';
+    color: white;
+  }
+
+  .DetailsHousesInfo{
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+  .DetailsHousesH3{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .DetailshousesP{
+
+    font-family: 'Lato', sans-serif;
+  }

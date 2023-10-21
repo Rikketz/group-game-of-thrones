@@ -1,0 +1,20 @@
+.menulogos{
+    margin-right: 10%; 
+    display:flex;
+    justify-content: flex-end;
+    position: absolute;
+    left: 94%;
+    gap: 20px;
+}
+.spain{
+    width: 4%;
+    min-width: 32px ;
+    display:flex;
+    margin-right: 5%;
+}
+.uk{
+    width: 4%;
+    min-width: 32px ;
+    display:flex;
+    margin-right: 5%;
+}
