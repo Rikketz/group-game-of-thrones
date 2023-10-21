@@ -4,7 +4,7 @@
     src: url(../../../public/assets/GameofThrones.ttf);
 }
 
-*{
+main{
     background-color: black;
 }
 
@@ -89,6 +89,7 @@
     height: 27px;
     outline: none;
     width: 400px;
+    font-size: 18px;
 }
 .housesInputInput:focus{
     font-size: 18px;
