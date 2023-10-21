@@ -8,6 +8,7 @@ import HousesPage from './Pages/HousesPage/HousesPage';
 
 
 // import Gallery from './Gallery';
+import UsersDetailPage from './Pages/DetailsCharactersPage/UsersDetailPage/UsersDetailPage';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Routes>
             <Route path="/houses" element={<HousesPage/>} />
             <Route path="/characters" element={<CharacterPages/>}/>
+            <Route path="/characters/:id" element={<UsersDetailPage />} />
             <Route path="/houses/:id" element={<DetailsHousesPage/>}/>
           </Routes>
         </Router>
