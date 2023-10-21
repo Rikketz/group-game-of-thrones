@@ -1,17 +1,21 @@
-.logos{  
-    margin-left: 70%; 
+.menulogos{  
+    margin-right: 10%; 
     display:flex;
     justify-content: flex-end;
     margin-top: 1%;
-    width: 50%;
+    width: 100%;
+    position: absolute;
 
 }
 .spain{
-    width: 5%;
+    width: 4%;
+    min-width: 32px ;
     display:flex;
     margin-right: 5%;
 }
 .uk{
-    width: 5%;   
+    width: 4%;
+    min-width: 32px ;
     display:flex;
+    margin-right: 5%;
 }

@@ -2,7 +2,7 @@
     font-family: "got";
     src: url(../../../public/assets/GameofThrones.ttf);    
 }
-body{   
+.homeimg{   
     background-image: url(../../../public/assets/image\ 1.png); 
     background-size: cover;
     width: 100%;
