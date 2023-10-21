@@ -5,7 +5,10 @@ import './style.css'
 import SimpleBar from 'simplebar-react';
 import 'simplebar-react/dist/simplebar.min.css';
 import FooterGeneral from "../../Components/FooterGeneral/FooterGeneral";
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 
 export default function CharacterPages() {
   const [characters, setCharacters] = useState([]);
@@ -31,19 +34,22 @@ export default function CharacterPages() {
   };
 
   return (<>
-    <div className="flexCharacters">
-      <input className="input" placeholder="Buscar..." type="text" onChange={(e) => filterCharacters(e.target.value)} />
-      <SimpleBar style={{ width:'95%', maxHeight: 500 }}>
-      <div className="flexImage">
+    <div className="charactersFlexCharacters">
+      <div className="charactersInput">
+        <FontAwesomeIcon className="charactersLupita" icon={faMagnifyingGlass} style={{color: "#ffffff",}} />
+        <input className="charactersInputInput" placeholder="Buscar..." type="text" onChange={(e) => filterCharacters(e.target.value)} />
+      </div>
+      <SimpleBar style={{ width:'95%', maxHeight: 700 }}>
+      <div className="charactersFlexImage">
         {CharactersFilter.map((character) => (
-          <div key={character.id} className="character">
+          <div key={character.id} className="charactersCharacter">
           <Link to={`/characters/${character.id}`}>
             <img
-              className="imgCharacters"
+              className="charactersImgCharacters"
               src={`http://localhost:3020/${character.image}`}
               alt={character.name}
             /> </Link>
-            <div className="hover-info">{character.name}</div>
+            <div className="charactersHover-info">{character.name}</div>
           </div>
         ))}
       
