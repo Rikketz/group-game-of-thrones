@@ -35,7 +35,7 @@ const UsersDetailPage = () => {
   }, [characters,id]);
 
   return (
-    <div>
+    <div className='charactersDetails_div'>
           <MenuConCasa/>
 
       {foundCharacter.id && (
