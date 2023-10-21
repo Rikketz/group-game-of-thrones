@@ -10,6 +10,7 @@ import { useTranslation } from 'react-i18next';
 
 // import Gallery from './Gallery';
 import UsersDetailPage from './Pages/DetailsCharactersPage/UsersDetailPage/UsersDetailPage';
+import FooterGeneral from './Components/FooterGeneral/FooterGeneral';
 
 function App() {
   const { t } = useTranslation();
@@ -20,7 +21,7 @@ function App() {
       <main>
       <Router>
       <Menu/>
-      {/* <p>{t('translated')}</p> */}
+
           <Routes>
             <Route path="/" element={<Home />}></Route>
             <Route path="/houses" element={<HousesPage/>} />
@@ -28,6 +29,7 @@ function App() {
             <Route path="/characters/:id" element={<UsersDetailPage />} />
             <Route path="/houses/:id" element={<DetailsHousesPage/>}/>
           </Routes>
+  
         </Router>
       </main>
     </div>

@@ -3,24 +3,28 @@ import { initReactI18next } from 'react-i18next';
 
 const resources = {
     en: {
-      translations: {
-        'CASA': "HOUSE"
-      },
-      translation:{
-        'ALIANZAS': "ALLIANCES"
-      },
+      translation: {
+        "CASA": "HOUSE",
+        'ALIANZAS': "ALLIANCES",
+        'APARICIONES': "APPEARANCES",
+        'PADRE': "FATHER",
+        'HERMANOS': "SIBLINGS",
+        'TITULOS': "TITLES"
 
+
+      }
     },
     sp: {
-      translations:{
-        'CASA': "CASA"
-      }, 
-      translation:{
-        'ALIANZAS': "ALIANZAS"
-      },
-
-
-    },
+      translation: {
+        "CASA": "CASA",
+        'ALIANZAS': "ALIANZAS",
+        'APARICIONES': "APARICIONES",
+        'PADRE': "PADRE",
+        'HERMANOS': "HERMANOS",
+        'TITULOS': "TITULOS"
+        
+      }
+    }
   };  
 
 i18n
