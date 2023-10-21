@@ -1,0 +1,43 @@
+@font-face {
+    font-family:  "got";
+    src: url('../../../public/assets/GameofThrones.ttf') ;
+    
+}
+
+h2,h3,h4 {
+    font-family: got;
+    color: white;
+}
+h2{
+    font-size: 33px;
+}
+h3{
+    font-size: 27px;
+}
+h4{
+    font-size: 20px;
+}
+p{
+    font-size: 20px;
+    color: white;
+}
+/* .img-figure{
+    width: 50%;
+} */
+
+.container_all {
+    display: flex;
+    flex-direction: column;
+}
+
+.container_text{
+    display: flex;
+    gap: 40px;
+}
+.container_imagename{
+    width: 100%;
+
+}
+img{
+    width: 15%;
+}
