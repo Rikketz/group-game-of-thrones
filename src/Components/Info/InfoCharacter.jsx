@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./InfoCharacter.css";
 import axios from "axios";
+import { useTranslation } from 'react-i18next';
 
 const InfoCharacter = ({
   name,
@@ -13,6 +14,7 @@ const InfoCharacter = ({
   image,
   houseimg,
 }) => {
+  const {t} = useTranslation()
   const [houses, setHouses] = useState([]);
   const [houseFound, setHouseFound] = useState({});
   const getHouses = async () => {
@@ -59,7 +61,7 @@ const InfoCharacter = ({
 </div>
 <div className="container_text">
       <div className="container_name">
-        <h3>CASA</h3>
+        <h3>{t('CASA')}</h3>
         <h4> {house}</h4>
         <img
             className="img-house"
@@ -70,13 +72,13 @@ const InfoCharacter = ({
       </div>
 
       <div className="container_name">
-        <h3>ALIANZAS</h3>
+        <h3>{t('ALIANZAS')}</h3>
         {alliances.map((alliance) => (
           <p>{alliance}</p>
         ))}
       </div>
       <div className="apariciones">
-      <h3>APARICIONES</h3>         
+      <h3>{t('APARICIONES')}</h3>         
       <div className="container_apariciones">
         {episodes.map((episode) => (
           <p>{episode}</p>
@@ -84,21 +86,21 @@ const InfoCharacter = ({
       </div>
 </div>
       <div className="container_name">
-        <h3>PADRE</h3>
+        <h3>{t('PADRE')}</h3>
         {parents.map((parent) => (
           <p>{parent}</p>
         ))}
       </div>
 
       <div className="container_name">
-        <h3>HERMANOS</h3>
+        <h3>{t('HERMANOS')}</h3>
         {siblings.map((sibling) => (
           <p>{sibling}</p>
         ))}
       </div>
 <div className="titulos">
       <div className="container_titulos">
-        <h3>TITULOS</h3>
+        <h3>{t('TITULOS')}</h3>
         {titles.map((title) => (
           <p>{title}</p>
         ))}

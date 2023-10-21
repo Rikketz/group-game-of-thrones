@@ -3,22 +3,31 @@ import { initReactI18next } from 'react-i18next';
 
 const resources = {
     en: {
-      translation: {
-        "translated-paragraph": "CHARACTERS"
-      }
+      translations: {
+        'CASA': "HOUSE"
+      },
+      translation:{
+        'ALIANZAS': "ALLIANCES"
+      },
+
     },
     sp: {
-      translation: {
-        "translated-paragraph": "PERSONAJES"
-      }
-    }
+      translations:{
+        'CASA': "CASA"
+      }, 
+      translation:{
+        'ALIANZAS': "ALIANZAS"
+      },
+
+
+    },
   };  
 
 i18n
   .use(initReactI18next)
   .init({
     resources,
-    lng: 'sp',
+    lng: 'en',
     fallbackLng: 'en'
   });
 

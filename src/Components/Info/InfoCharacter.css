@@ -9,16 +9,16 @@ h2,h3,h4 {
     color: white;
 }
 h2{
-    font-size: 29px;
-}
-h3{
     font-size: 23px;
 }
+h3{
+    font-size: 21px;
+}
 h4{
-    font-size: 17px;
+    font-size: 18px;
 }
 p{
-    font-size: 20px;
+    font-size: 15px;
     color: white;
 }
 .img-figure{
@@ -50,7 +50,7 @@ p{
     align-items: center;
 }
 .img-character{
-    width: 15%;
+    width: 14%;
 }
 .img-house{
     width: 44%;
@@ -70,7 +70,7 @@ p{
     align-items: center;
 }
 .container_apariciones{
-    width: 454px;
+    width: 350px;
     min-width: 300px;
     height: 250px;
     display: flex;

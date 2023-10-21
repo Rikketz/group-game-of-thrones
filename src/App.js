@@ -20,6 +20,7 @@ function App() {
       <main>
       <Router>
       <Menu/>
+      {/* <p>{t('translated')}</p> */}
           <Routes>
             <Route path="/" element={<Home />}></Route>
             <Route path="/houses" element={<HousesPage/>} />
