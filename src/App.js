@@ -19,7 +19,6 @@ function App() {
       </header>
       <main>
       <Router>
-      <Menu/>
           <Routes>
             <Route path="/" element={<Home />}></Route>
             <Route path="/houses" element={<HousesPage/>} />

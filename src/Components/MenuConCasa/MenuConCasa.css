@@ -1,0 +1,33 @@
+.menulogos{
+    margin-right: 10%; 
+    display:flex;
+    justify-content: flex-end;
+    position: absolute;
+    right: 6%;
+    gap: 20px;
+}
+
+.homeIcono{
+    height: 4%;
+    min-height: 34px;
+    width: 4%;
+    min-width: 43px ;
+    display:flex;
+    margin-right: 5%;
+}
+.spain{
+    height: 4%;
+    min-height: 34px;
+    width: 4%;
+    min-width: 43px ;
+    display:flex;
+    margin-right: 5%;
+}
+.uk{
+    height: 4%;
+    min-height: 34px;
+    width: 4%;
+    min-width: 43px ;
+    display:flex;
+    margin-right: 5%;
+}
