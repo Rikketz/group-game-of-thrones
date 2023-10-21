@@ -1,11 +1,12 @@
 import FooterGeneral from "../../Components/FooterGeneral/FooterGeneral";
 import Menu from "../../Components/Menu/Menu";
 import "./Home.css";
+import MenuConCasa from "../../Components/MenuConCasa/MenuConCasa";
 export default function Home() {
   return (<>
   <div className="homeInicial">
     <div className="homeFlags">
-      <Menu/>
+      <MenuConCasa/>
     </div>
     <div className="homeimg">
       <div>
