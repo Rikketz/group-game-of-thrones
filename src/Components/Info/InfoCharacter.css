@@ -21,9 +21,12 @@ p{
     font-size: 20px;
     color: white;
 }
-/* .img-figure{
-    width: 50%;
-} */
+.img-figure{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
 
 .container_all {
     display: flex;
@@ -33,11 +36,59 @@ p{
 .container_text{
     display: flex;
     gap: 40px;
+    padding-right: 6%;
+    padding-left: 9%;
 }
 .container_imagename{
     width: 100%;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img-character{
+    width: 15%;
+}
+.img-house{
+    width: 44%;
+    min-width: 150px;
+}
+.container_name{
+    /* width: 50px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.container_apariciones{
+    width: 454px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+   
+}
+.container_titulos{
+    width: 454px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+   
 }
 img{
     width: 15%;
+}
+.container_apariciones::-webkit-scrollbar,.container_titulos::-webkit-scrollbar{
+    width: 10px;
+}
+.container_apariciones::-webkit-scrollbar-track,.container_titulos::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 10px #453d3d;
+    border-radius: 5px;
+}
+.container_apariciones::-webkit-scrollbar-thumb,.container_titulos::-webkit-scrollbar-thumb {
+    background-color: white;
+    outline: 1px solid slategrey;
+    border-radius: 5px;
 }

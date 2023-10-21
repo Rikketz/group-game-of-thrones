@@ -62,7 +62,7 @@ const InfoCharacter = ({
         <h3>CASA</h3>
         <h4> {house}</h4>
         <img
-            className="img-character"
+            className="img-house"
             src={`http://localhost:3020/${houseFound ? houseFound.image : ''}`}
             alt=""
           />
@@ -76,7 +76,7 @@ const InfoCharacter = ({
         ))}
       </div>
 
-      <div className="container_name">
+      <div className="container_apariciones">
         <h3>APARICIONES</h3>
         {episodes.map((episode) => (
           <p>{episode}</p>
@@ -97,7 +97,7 @@ const InfoCharacter = ({
         ))}
       </div>
 
-      <div className="container_name">
+      <div className="container_titulos">
         <h3>TITULOS</h3>
         {titles.map((title) => (
           <p>{title}</p>
