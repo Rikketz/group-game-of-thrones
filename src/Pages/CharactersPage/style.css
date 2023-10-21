@@ -24,6 +24,10 @@ main {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  padding-left: 4.43%;
+  padding-right: 4.43%;
+  width: 91.14%;
+  height: 73.98%;
 
 }
 
@@ -63,14 +67,14 @@ main {
   visibility: visible;
 }
 
-.input {
+ .input {
   border: none; /* Elimina el borde */
   border-bottom: 2px solid rgb(245, 245, 242); /* Línea inferior de 2 píxeles de ancho en color amarillo */
   background-color: black; /* Fondo negro */
   color: white; /* Texto blanco */
   margin-bottom: 25px;
   margin-top: 25px;
-  margin-right: 720px;
+  margin-right: 840px;
   padding-right: 250px;
   padding-bottom: 5px;
 }
@@ -82,9 +86,6 @@ input::-moz-placeholder {
 input::placeholder {
   font-size: 18px;
 }
-
-
-
 
 
 
