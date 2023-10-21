@@ -4,6 +4,8 @@ import axios from "axios";
 import './style.css'
 import SimpleBar from 'simplebar-react';
 import 'simplebar-react/dist/simplebar.min.css';
+import FooterGeneral from "../../Components/FooterGeneral/FooterGeneral";
+import { Link } from "react-router-dom";
 
 export default function CharacterPages() {
   const [characters, setCharacters] = useState([]);
@@ -28,18 +30,19 @@ export default function CharacterPages() {
     setCharactersFilter(filteredCharacters);
   };
 
-  return (
+  return (<>
     <div className="flexCharacters">
       <input className="input" placeholder="Buscar..." type="text" onChange={(e) => filterCharacters(e.target.value)} />
-      <SimpleBar style={{ width:'95%', maxHeight: 1050 }}>
+      <SimpleBar style={{ width:'95%', maxHeight: 500 }}>
       <div className="flexImage">
         {CharactersFilter.map((character) => (
           <div key={character.id} className="character">
+          <Link to={`/characters/${character.id}`}>
             <img
               className="imgCharacters"
               src={`http://localhost:3020/${character.image}`}
               alt={character.name}
-            />
+            /> </Link>
             <div className="hover-info">{character.name}</div>
           </div>
         ))}
@@ -47,6 +50,8 @@ export default function CharacterPages() {
       </div>
       </SimpleBar>
     </div>
+        <FooterGeneral/>
+    </>
 
   );
 }
