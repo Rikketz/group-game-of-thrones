@@ -1,39 +1,40 @@
-.houses {
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Pacifico&display=swap');
+.Detailshouse {
+  width: 100%;
+  margin-top: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Ajusta la altura según sea necesario */
-    background-color: #f0f0f0; /* Color de fondo de la pantalla */
+    height: 100%; /* Ajusta la altura según sea necesario */
+    background-color: black; /* Color de fondo de la pantalla */
   }
   
-  /* Estilo para cada casa */
-  .house {
-    background-color: white;
-    margin: 10px;
+  .DetailshouseImage{
+    width: 248px;
+    height: 297px;
+  }
+  .DetailshouseName{
+    font-family: 'got';
+    color: white;
+  }
+
+  .DetailsHousesInfo{
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+  .DetailsHousesH3{
     padding: 20px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
   }
-  
-  /* Estilo para la imagen de la casa */
-  .house-image {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  /* Estilo para el nombre de la casa */
-  .house-name {
-    font-size: 24px;
-    font-weight: bold;
-    margin-top: 10px;
-  }
-  
-  /* Estilo para los detalles de la casa */
-  .house-details {
-    margin-top: 20px;
-  }
-  
-  /* Estilo para los detalles de cada elemento (settlement, region, etc.) */
-  .house-details div {
-    margin: 5px 0;
+
+  .DetailshousesP{
+
+    font-family: 'Lato', sans-serif;
   }
