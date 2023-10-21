@@ -5,17 +5,23 @@
     justify-content: space-between;
     font-size: 36px;
     text-decoration: none;
+
 }
 
 .casa:hover{
     text-decoration: overline;
+
 }
 
 .divLinksFooter{
+
     width: 100%;
+    height: 10%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     font-weight: normal;
-    padding-top: 20px;
+    align-items: center;
+    align-content: center;
 }

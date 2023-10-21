@@ -1,11 +1,10 @@
-.menulogos{  
+.menulogos{
     margin-right: 10%; 
     display:flex;
     justify-content: flex-end;
-    margin-top: 1%;
-    width: 100%;
     position: absolute;
-
+    left: 94%;
+    gap: 20px;
 }
 .spain{
     width: 4%;

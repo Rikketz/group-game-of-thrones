@@ -8,6 +8,7 @@ import FooterGeneral from "../../Components/FooterGeneral/FooterGeneral";
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import MenuConCasa from "../../Components/MenuConCasa/MenuConCasa";
 
 
 export default function CharacterPages() {
@@ -34,12 +35,21 @@ export default function CharacterPages() {
   };
 
   return (<>
-    <div className="charactersFlexCharacters">
-      <div className="charactersInput">
-        <FontAwesomeIcon className="charactersLupita" icon={faMagnifyingGlass} style={{color: "#ffffff",}} />
-        <input className="charactersInputInput" placeholder="Buscar..." type="text" onChange={(e) => filterCharacters(e.target.value)} />
+    <div className="charactersTextAndListContainer">
+      <div className="charactersInputAndFlags">
+        <div className="charactersInput">
+          <FontAwesomeIcon className="charactersLupita" icon={faMagnifyingGlass} style={{color: "#ffffff",}} />
+          <input className="charactersInputInput" placeholder="Buscar..." type="text" onChange={(e) => filterCharacters(e.target.value)} />
+        </div>
+        <div className="charactersFlags">
+          <MenuConCasa/>
       </div>
-      <SimpleBar style={{ width:'95%', maxHeight: 700 }}>
+      </div>
+
+    </div>
+    <div className="charactersFlexCharacters">
+      
+      <SimpleBar style={{ width:'95%', maxHeight: 770 }}>
       <div className="charactersFlexImage">
         {CharactersFilter.map((character) => (
           <div key={character.id} className="charactersCharacter">
