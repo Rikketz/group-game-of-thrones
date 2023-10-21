@@ -75,14 +75,14 @@ const InfoCharacter = ({
           <p>{alliance}</p>
         ))}
       </div>
-
+      <div className="apariciones">
+      <h3>APARICIONES</h3>         
       <div className="container_apariciones">
-        <h3>APARICIONES</h3>
         {episodes.map((episode) => (
           <p>{episode}</p>
         ))}
       </div>
-
+</div>
       <div className="container_name">
         <h3>PADRE</h3>
         {parents.map((parent) => (
@@ -96,12 +96,13 @@ const InfoCharacter = ({
           <p>{sibling}</p>
         ))}
       </div>
-
+<div className="titulos">
       <div className="container_titulos">
         <h3>TITULOS</h3>
         {titles.map((title) => (
           <p>{title}</p>
         ))}
+      </div>
       </div>
       </div>
     </div>
