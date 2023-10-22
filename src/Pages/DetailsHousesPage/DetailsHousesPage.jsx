@@ -45,6 +45,7 @@ function DetailsHousesPage() {
           <h3 className="DetailsHousesH3">Foundation: <p className="DetailshousesP">{house.foundation}</p></h3>
           </div>
         </div>
+
     </div>
   );
 }

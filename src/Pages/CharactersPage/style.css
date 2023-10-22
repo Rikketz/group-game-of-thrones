@@ -3,11 +3,6 @@
   font-family: "got";
   src: url("../../../public/assets/GameofThrones.ttf");
 }
-main {
-  width: 100%;
-  height: 100%;
-  background-color: black;
-}
 
 .imgCharacters {
   width: 200px;

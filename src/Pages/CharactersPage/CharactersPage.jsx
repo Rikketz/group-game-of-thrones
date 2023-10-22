@@ -43,6 +43,7 @@ export default function CharacterPages() {
               src={`http://localhost:3020/${character.image}`}
               alt={character.name}
             /> </Link>
+              
             <div className="hover-info">{character.name}</div>
           </div>
         ))}
