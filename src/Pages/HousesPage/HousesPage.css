@@ -4,47 +4,51 @@
     src: url(../../../public/assets/GameofThrones.ttf);
 }
 
-*{
+main{
     background-color: black;
 }
 
-.textAndListContainer{
+.housesTextAndListContainer{
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    padding-bottom: 2%;
+    height: 10%;
 }
 
-.listContainer{
+.housesListContainer{
     padding-left: 4.43%;
     padding-right: 4.43%;
     width: 91.14%;
-    height: 73.98%;
+    height: 80%;
     display: flex;
 
 }
 
-.housesList{
+.housesFlags{
+    width: 15%;
+    padding-top: 2%;
+}
+.housesHousesList{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     height: 700px;
     overflow: auto;
 }
-.housesList::-webkit-scrollbar{
+.housesHousesList::-webkit-scrollbar{
     width: 10px;
 }
-.housesList::-webkit-scrollbar-track {
+.housesHousesList::-webkit-scrollbar-track {
     box-shadow: inset 0 0 10px #453d3d;
     border-radius: 5px;
 }
-.housesList::-webkit-scrollbar-thumb {
+.housesHousesList::-webkit-scrollbar-thumb {
     background-color: white;
     outline: 1px solid slategrey;
     border-radius: 5px;
 }
 
-.housesContainer{
+.housesHousesContainer{
     display: flex;
     flex-direction: column;
     width: 248px;
@@ -52,44 +56,64 @@
     align-items: center
 }
 
-.housesFlags{
+.housesHousesFlags{
     width: 248px;
     height: 297.6px;
 }
 
-.housesNames{
+.housesHousesNames{
     color: white;
     font-size: 14px;
     font-family: "got";
     font-weight: normal;
 }
-.input {
-    border: none; /* Elimina el borde */
+.housesInputAndFlags{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+}
+
+.housesInput {
+    padding-top: 2%;
+    display: flex;
+    border: none;
     border-bottom: 2px solid rgb(245, 245, 242); /* Línea inferior de 2 píxeles de ancho en color amarillo */
     background-color: black; /* Fondo negro */
     color: white; /* Texto blanco */
-
     margin-left: 6.7%;
     font-family: "got";
-    height: 25px;
+    height: 30px;
+    outline: none;
 }
-
-.input::-moz-placeholder {
+.housesLupita{
+    width: 21px;
+    height: 21px;
+}
+.housesInputInput{
+    border: none; /* Elimina el borde */
+    background-color: black; /* Fondo negro */
+    color: white; /* Texto blanco */
+    margin-left: 6.7%;
+    font-family: "got";
+    height: 27px;
+    outline: none;
+    width: 400px;
     font-size: 18px;
-
 }
-
-.input::placeholder {
+.housesInputInput:focus{
     font-size: 18px;
 }
 
-.input::before {
-    content: "\f002"; /* Código Unicode para el icono de lupa de Font Awesome */
-    font-family: "Font Awesome 5 Free";
-    font-size: 16px; /* Tamaño del icono de lupa */
-    position: absolute;
-    left: 4px; /* Posición desde la izquierda */
-    top: 50%; /* Posición verticalmente centrada */
-    transform: translateY(-50%); /* Alineación vertical centrada */
-    color: white; /* Color del icono de lupa */
-}/*# sourceMappingURL=style.css.map */
+.housesInputInput::-moz-placeholder {
+    font-size: 18px;
+    border: none;
+}
+
+.housesInputInput::placeholder {
+    font-size: 18px;
+    border: none;
+}

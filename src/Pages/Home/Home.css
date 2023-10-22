@@ -1,0 +1,44 @@
+@font-face{
+    font-family: "got";
+    src: url(../../../public/assets/GameofThrones.ttf);    
+}
+.homeInicial{
+    height: 100%;
+    width: 100%;
+    background-image: url(../../../public/assets/image\ 1.png); 
+    background-size: cover;
+}
+
+.homeFlags{
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.homeimg{   
+    height: 80%;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+     /* Establece la altura al 100% del viewport */
+}
+.gotletras{
+    text-align: center; /* Alinea el texto al centro horizontalmente */
+} 
+    
+.got{
+    color: white;
+    font-family: "got"; 
+    font-size: 176px;       
+    flex-wrap: wrap;
+    font-weight: normal;
+    display: flex;
+}
+.links{
+    color: white;
+    font-family: "got";
+    display:flex;
+    justify-content: space-between;
+    margin-left: 30%;
+    font-size: 130%;    
+}

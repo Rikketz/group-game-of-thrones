@@ -3,7 +3,7 @@ import { useLocation, useNavigate, useParams } from 'react-router-dom'
 // import InfoCharacter from '../../Info/InfoCharacter';
 import axios from 'axios';
 import InfoCharacter from './../../../Components/Info/InfoCharacter';
-
+import MenuConCasa from "../../../Components/MenuConCasa/MenuConCasa"
 const UsersDetailPage = () => {
   const [characters, setCharacters] = useState([]);
   const [foundCharacter, setfoundCharacter] = useState({});
@@ -35,12 +35,15 @@ const UsersDetailPage = () => {
   }, [characters,id]);
 
   return (
-    <div>
+    <div className='charactersDetails_div'>
+          <MenuConCasa/>
+
       {foundCharacter.id && (
         <>
           {" "}
           <InfoCharacter {...foundCharacter} />{" "}
           <img src={foundCharacter.image} alt="" />
+
         </>
       )}
     </div>

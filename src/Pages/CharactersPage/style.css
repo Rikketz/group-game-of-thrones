@@ -4,16 +4,29 @@
   src: url("../../../public/assets/GameofThrones.ttf");
 }
 
-.imgCharacters {
-  width: 200px;
+.charactersListContainer{
+  padding-left: 4.43%;
+  padding-right: 4.43%;
+  width: 91.14%;
+  height: 80%;
+  display: flex;
+}
+
+.charactersFlags{
+  width: 15%;
+  padding-top: 2%;
+}
+
+.charactersImgCharacters {
+  width: 248px;
   height: 320px;
   -o-object-fit: cover;
-     object-fit: cover;
-  padding-bottom: 45px;
+  object-fit: cover;
+  padding-bottom: 68px;
   margin-right: 3px;
 }
 
-.flexImage {
+.charactersFlexImage {
 
   display: flex;
   flex-direction: row;
@@ -26,22 +39,22 @@
 
 }
 
-.flexCharacters {
+.charactersFlexCharacters {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.character {
+.charactersCharacter {
   position: relative;
   display: inline-block;
 }
 
-.character img {
+.charactersCharacter img {
   display: block;
 }
 
-.hover-info {
+.charactersHover-info {
   position: absolute;
   bottom: 45px;
   width: 100%;
@@ -57,40 +70,63 @@
   font-size: 10px;
 }
 
-.character:hover .hover-info {
+.charactersCharacter:hover .hover-info {
   opacity: 1;
   visibility: visible;
 }
 
- .input {
-  border: none; /* Elimina el borde */
+.charactersInput {
+  padding-top: 2%;
+  display: flex;
+  border: none;
   border-bottom: 2px solid rgb(245, 245, 242); /* Línea inferior de 2 píxeles de ancho en color amarillo */
   background-color: black; /* Fondo negro */
   color: white; /* Texto blanco */
-  margin-bottom: 25px;
-  margin-top: 25px;
-  margin-right: 840px;
-  padding-right: 250px;
-  padding-bottom: 5px;
+  margin-left: 6.7%;
+  font-family: "got";
+  height: 30px;
+  outline: none;
 }
 
-input::-moz-placeholder {
+.charactersInputAndFlags{
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+}
+
+.charactersLupita{
+  width: 21px;
+  height: 21px;
+}
+
+.charactersInputInput {
+  border: none; /* Elimina el borde */
+  background-color: black; /* Fondo negro */
+  color: white; /* Texto blanco */
+  margin-left: 6.7%;
+  font-family: "got";
+  height: 27px;
+  outline: none;
+  width: 400px;
   font-size: 18px;
 }
 
-input::placeholder {
+.charactersInputInput:focus{
   font-size: 18px;
 }
 
-.input::before {
-  content: "\f002"; /* Código Unicode para el icono de lupa de Font Awesome */
-  font-family: "Font Awesome 5 Free";
-  font-size: 16px; /* Tamaño del icono de lupa */
-  position: absolute;
-  left: 4px; /* Posición desde la izquierda */
-  top: 50%; /* Posición verticalmente centrada */
-  transform: translateY(-50%); /* Alineación vertical centrada */
-  color: white; /* Color del icono de lupa */
+.charactersInputInput::-moz-placeholder {
+  font-size: 18px;
+  border: none;
+}
+
+.charactersInputInput::placeholder {
+  font-size: 18px;
+  border: none;
 }
 
 
