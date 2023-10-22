@@ -68,21 +68,22 @@
 
 .charactersHover-info {
   position: absolute;
-  bottom: 45px;
+  bottom: 68px;
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
-  padding-top: 15px;
-  padding-bottom: 10px;
+  padding-top: 21px;
+  padding-bottom: 21px;
   opacity: 1;
   visibility: hidden;
   transition: opacity 0.2s ease-in-out;
   text-align: center;
   font-family: got;
-  font-size: 10px;
+  font-size: 14px;
+  font-weight: normal;
 }
 
-.charactersCharacter:hover .hover-info {
+.charactersCharacter:hover .charactersHover-info {
   opacity: 1;
   visibility: visible;
 }

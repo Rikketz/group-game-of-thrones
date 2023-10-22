@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./InfoCharacter.css";
 import axios from "axios";
 import { useTranslation } from 'react-i18next';
-import Menu from "../Menu/Menu";
 import MenuConCasa from "../../Components/MenuConCasa/MenuConCasa";
 const InfoCharacter = ({
   name,
@@ -21,7 +20,7 @@ const InfoCharacter = ({
   const getHouses = async () => {
     const results = await axios(`http://localhost:3020/houses`);
     // console.log(results)
-   setHouses(results.data);
+  setHouses(results.data);
   };
 
 // console.log(houses)
@@ -47,7 +46,8 @@ const InfoCharacter = ({
 
   },[houses])
   return (
-    <><MenuConCasa/>
+    <>
+
     <div className="container_all">
     <div className="container_imagename">
             <figure className="img-figure">
@@ -64,7 +64,6 @@ const InfoCharacter = ({
 <div className="container_text">
       <div className="container_name">
         <h3>{t('translated-CASA')}</h3>
-        <h4> {house}</h4>
         <img
             className="img-house"
             src={`http://localhost:3020/${houseFound ? houseFound.image : ''}`}
