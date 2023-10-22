@@ -18,6 +18,7 @@ const resources = {
         "translated-Alliances": "ALLIANCES",
         "translated-RELIGIONS": "RELIGIONS",
         "translated-FOUNDATION": "FOUNDATION",
+        "translated-GAME OF THRONES": "GAME OF THRONES"
 
 
       }
@@ -38,8 +39,7 @@ const resources = {
         "translated-Alliances": "ALIANZAS",
         "translated-RELIGIONS": "RELIGIONES",
         "translated-FOUNDATION": "BASE",
-
-
+        "translated-GAME OF THRONES": "JUEGO DE TRONOS"
       }
     }
   };  

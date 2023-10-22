@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import './style.css'
-import SimpleBar from 'simplebar-react';
 import 'simplebar-react/dist/simplebar.min.css';
 import FooterGeneral from "../../Components/FooterGeneral/FooterGeneral";
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
@@ -45,30 +44,25 @@ export default function CharacterPages() {
           <MenuConCasa/>
         </div>
       </div>
-
     </div>
-    <div className="charactersFlexCharacters">
-      
-      <SimpleBar className="charactersSimpleBar">
-
-      <div className="charactersFlexImage">
+    <div className="charactersListContainer">
+      <ul className="charactersCharactersList">
         {CharactersFilter.map((character) => (
           <div key={character.id} className="charactersCharacter">
-          <Link to={`/characters/${character.id}`}>
-            <img
+            <Link to={`/characters/${character.id}`}>
+              <img
               className="charactersImgCharacters"
               src={`http://localhost:3020/${character.image}`}
-              alt={character.name}
-            /> </Link>
-            <div className="hover-info">{character.name}</div>
-            <div className="charactersHover-info">{character.name}</div>
+              alt={character.name}/> 
+            </Link>
+            <div className="hover-info"></div>
+            <div className="charactersHover-info">{character.name}
+            </div>
           </div>
-        ))}
-      
-      </div>
-      </SimpleBar>
+          ))}
+      </ul>
     </div>
-        <FooterGeneral/>
+    <FooterGeneral/>
     </>
 
   );
