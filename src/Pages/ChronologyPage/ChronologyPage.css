@@ -1,0 +1,96 @@
+.chronologyContainer{
+    width: 100%;
+    height: ;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.c-img{
+    width: 75px;
+    height: 50px;
+    border-radius: 50%;
+}  
+.escalonados{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}    
+
+
+.chronologyInfo{
+
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 341px;
+    border-top: solid white;   
+    }
+    .chronologyInfo:before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 1px;
+        background-color: white;
+        left: -5px;
+    }        
+
+    div p{
+
+        text-align: center;
+    }
+
+#infoCard{
+    
+    p{
+        font-size: 12px;
+    }
+}
+    .simplebar-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        height: 80%;
+        margin-top: 5%;
+
+    }
+    button{
+        border-radius: 50%;
+        border: solid white;
+        height: 30px;
+        width: 30px;
+        background: transparent;
+        color: white;
+        font-size: 8px;
+    }
+
+    label{
+        height: 40px;
+        width: 50%;
+        border-left: solid white;
+        margin-left: 50%;
+
+            img{
+                transform: rotate(90deg);
+                height: 20px;
+                margin-left: -10px;
+
+
+            }
+
+    }
+    /* .housesHousesList::-webkit-scrollbar{
+        width: 10px;
+    }
+    .housesHousesList::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 10px #453d3d;
+        border-radius: 5px;
+    }
+    .housesHousesList::-webkit-scrollbar-thumb {
+        background-color: white;
+        outline: 1px solid slategrey;
+        border-radius: 5px;
+    }     */

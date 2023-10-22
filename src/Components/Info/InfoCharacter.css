@@ -77,9 +77,7 @@ p{
     overflow: scroll;
    
 }
-img{
-    width: 15%;
-}
+
 .container_apariciones::-webkit-scrollbar,.container_titulos::-webkit-scrollbar{
     width: 10px;
 }
