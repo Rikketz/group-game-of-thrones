@@ -4,7 +4,6 @@
   src: url("../../../public/assets/GameofThrones.ttf");
 }
 
-
 .charactersTextAndListContainer{
   display: flex;
   align-items: flex-start;
@@ -24,7 +23,27 @@
 .charactersFlags{
   width: 15%;
   padding-top: 2%;
+}
 
+.charactersCharactersList{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  height: 700px;
+  overflow: auto;
+}
+
+.charactersCharactersList::-webkit-scrollbar{
+  width: 10px;
+}
+.charactersCharactersList::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 10px #453d3d;
+  border-radius: 5px;
+}
+.charactersCharactersList::-webkit-scrollbar-thumb {
+  background-color: white;
+  outline: 1px solid slategrey;
+  border-radius: 5px;
 }
 
 .charactersImgCharacters {
@@ -32,7 +51,7 @@
   height: 320px;
   -o-object-fit: cover;
   object-fit: cover;
-  padding-bottom: 68px;
+  padding-bottom: 12px;
   margin-right: 3px;
 }
 
@@ -71,7 +90,7 @@
 
 .charactersHover-info {
   position: absolute;
-  bottom: 68px;
+  bottom: 10px;
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
@@ -81,7 +100,7 @@
   visibility: hidden;
   transition: opacity 0.2s ease-in-out;
   text-align: center;
-  font-family: got;
+  font-family: "got";
   font-size: 14px;
   font-weight: normal;
 }

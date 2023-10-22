@@ -6,14 +6,18 @@
     gap: 20px;
 }
 .spain{
-    width: 4%;
-    min-width: 32px ;
-    display:flex;
+    border-radius: 5px;
+    /* height: 40px; */
+    width: 55px;
+    min-width: 32px;
+    display: flex;
     margin-right: 5%;
 }
 .uk{
-    width: 4%;
-    min-width: 32px ;
-    display:flex;
+    border-radius: 5px;
+    /* height: 40px; */
+    width: 55px;
+    min-width: 32px;
+    display: flex;
     margin-right: 5%;
 }

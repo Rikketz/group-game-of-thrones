@@ -3,9 +3,6 @@ import "./FooterGeneral.css"
 import { useTranslation } from 'react-i18next';
 export default function FooterGeneral(){
 
-<div className="links">
-    <a className="personajes">PERSONAJES</a><a className="casas">CASAS</a><a className="crono">CRONOLOGIA</a>
-</div>
 const {t} = useTranslation()
 return (<>
     <div className="divLinksFooter">
