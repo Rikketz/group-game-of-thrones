@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Pacifico&display=swap');
+
+
 @font-face {
     font-family:  "got";
     src: url('../../../public/assets/GameofThrones.ttf') ;
@@ -9,17 +12,21 @@ h2,h3,h4 {
     color: white;
 }
 h2{
-    font-size: 33px;
+    font-size: 23px;
+    font-weight: normal;
 }
 h3{
-    font-size: 27px;
+    font-size: 21px;
+    font-weight: normal;
 }
 h4{
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: normal;
 }
 p{
-    font-size: 20px;
+    font-size: 15px;
     color: white;
+    font-family: 'Lato', sans-serif;
 }
 .img-figure{
     width: 100%;
@@ -27,26 +34,34 @@ p{
     justify-content: center;
 
 }
-
+.charactersDetails_div{
+    padding-top: 20px;
+}
 .container_all {
+    width: 100%;
+    padding-top: 40px;
     display: flex;
     flex-direction: column;
+    height: 90%;
 }
 
 .container_text{
+    /* width: 100%; */
     display: flex;
     gap: 40px;
     padding-right: 6%;
     padding-left: 9%;
 }
 .container_imagename{
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .img-character{
-    width: 15%;
+    width: 248px;
+    height: 320px;
+    object-fit: cover;
 }
 .img-house{
     width: 44%;
@@ -54,27 +69,34 @@ p{
 }
 .container_name{
     /* width: 50px; */
+    
     display: flex;
     flex-direction: column;
     align-items: center;
-   
+}
+.apariciones, .titulos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .container_apariciones{
-    width: 454px;
-    height: 300px;
+    width: 350px;
+    min-width: 300px;
+    height: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: scroll;
+    overflow: auto;
    
 }
 .container_titulos{
-    width: 454px;
+    width: 300px;
+    min-width: 250px;
     height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: scroll;
+    overflow: auto;
    
 }
 
@@ -89,4 +111,67 @@ p{
     background-color: white;
     outline: 1px solid slategrey;
     border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.divHeader{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+.goBack{
+    position: absolute;
+    left: 10%;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.goBackVolver{
+    padding-left: 15px;
+    font-size: 24px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
 }

@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Pacifico&display=swap');
 .Detailshouse {
   width: 100%;
-  margin-top: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,3 +37,7 @@
 
     font-family: 'Lato', sans-serif;
   }
+
+
+
+  

@@ -1,19 +1,24 @@
+import FooterGeneral from "../../Components/FooterGeneral/FooterGeneral";
+import Menu from "../../Components/Menu/Menu";
 import "./Home.css";
-import { useTranslation } from 'react-i18next';
+import MenuConCasa from "../../Components/MenuConCasa/MenuConCasa";
 export default function Home() {
-  const { t } = useTranslation();
-  return (
+  return (<>
+  <div className="homeInicial">
+    <div className="homeFlags">
+      <MenuConCasa/>
+    </div>
     <div className="homeimg">
       <div>
         <div className="gotletras">
           <span className="got">GAMES OF THRONES</span>
         </div>
-        <div className="links">
-          <span className="personajes">{t('translated-paragraph')}</span>
-          <span className="casas">CASAS</span>
-          <span className="crono">CRONOLOGIA</span>
-        </div>
+        
       </div>
+      
     </div>
+    <FooterGeneral/>
+    </div>
+    </>
   );
 }
