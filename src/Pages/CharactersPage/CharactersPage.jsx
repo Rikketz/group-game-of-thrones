@@ -50,6 +50,7 @@ export default function CharacterPages() {
     <div className="charactersFlexCharacters">
       
       <SimpleBar className="charactersSimpleBar">
+
       <div className="charactersFlexImage">
         {CharactersFilter.map((character) => (
           <div key={character.id} className="charactersCharacter">
@@ -59,6 +60,7 @@ export default function CharacterPages() {
               src={`http://localhost:3020/${character.image}`}
               alt={character.name}
             /> </Link>
+            <div className="hover-info">{character.name}</div>
             <div className="charactersHover-info">{character.name}</div>
           </div>
         ))}

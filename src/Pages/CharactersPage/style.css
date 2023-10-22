@@ -3,6 +3,8 @@
   font-family: "got";
   src: url("../../../public/assets/GameofThrones.ttf");
 }
+<<<<<<< HEAD
+=======
 
 .charactersTextAndListContainer{
   display: flex;
@@ -10,6 +12,7 @@
   flex-direction: column;
   height: 10%;
 }
+>>>>>>> db7709095da22aad184dbb420feebf72c10782a8
 
 .charactersListContainer{
   padding-left: 4.43%;
