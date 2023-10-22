@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useLocation, useNavigate, useParams } from 'react-router-dom'
+import { Link, NavLink, useLocation, useNavigate, useParams } from 'react-router-dom'
 // import InfoCharacter from '../../Info/InfoCharacter';
 import axios from 'axios';
 import InfoCharacter from './../../../Components/Info/InfoCharacter';
@@ -35,18 +35,27 @@ const UsersDetailPage = () => {
   }, [characters,id]);
 
   return (
-    <div className='charactersDetails_div'>
-          <MenuConCasa/>
-
+    // <div className='charactersDetails_div'>
+    //       <MenuConCasa/>
+    <>
+    <div className="divHeader">
+      <div className="goBack">
+          <img src="https://cdn.zeplin.io/5e1c73baff24c3be01ba9cca/assets/e042365d-a1dc-4fef-ab6c-245a7c85f922.svg" alt="flechi" className="goBackArrow"></img>
+          <Link className="goBackVolver" to={"/characters"}> <p className="goBackVolver">Volver</p></Link>
+        </div>
+        
+      <MenuConCasa/>
+    </div>
+    <div>
       {foundCharacter.id && (
         <>
           {" "}
           <InfoCharacter {...foundCharacter} />{" "}
           <img src={foundCharacter.image} alt="" />
-
         </>
       )}
     </div>
+    </>
   );
 };
 

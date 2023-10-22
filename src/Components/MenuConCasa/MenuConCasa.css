@@ -1,10 +1,14 @@
-.menulogos{
-    margin-right: 10%; 
+.menulogosConCasa{ 
+    width: 200px;
     display:flex;
     justify-content: flex-end;
     position: absolute;
     right: 6%;
     gap: 20px;
+    align-items: center
+}
+.menuConCasaCasita{
+    width: 50px;
 }
 
 .homeIcono{
@@ -15,19 +19,19 @@
     display:flex;
     margin-right: 5%;
 }
-.spain{
-    height: 4%;
-    min-height: 34px;
-    width: 4%;
-    min-width: 43px ;
-    display:flex;
+.menuConCasaspain{
+    border-radius: 5px;
+    /* height: 40px; */
+    width: 55px;
+    min-width: 32px;
+    display: flex;
     margin-right: 5%;
 }
-.uk{
-    height: 4%;
-    min-height: 34px;
-    width: 4%;
-    min-width: 43px ;
-    display:flex;
+.menuConCasauk{
+    border-radius: 5px;
+    /* height: 40px; */
+    width: 55px;
+    min-width: 32px;
+    display: flex;
     margin-right: 5%;
 }
