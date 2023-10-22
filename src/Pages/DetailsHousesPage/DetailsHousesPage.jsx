@@ -7,7 +7,7 @@ import MenuConCasa from "../../Components/MenuConCasa/MenuConCasa";
 import { useTranslation } from "react-i18next";
 import { t } from "i18next";
 
-function DetailsHousesPage() {
+export default function DetailsHousesPage() {
   const { id } = useParams();
   const [house, setHouse] = useState({});
 
@@ -54,4 +54,5 @@ function DetailsHousesPage() {
   );
 }
 
-export default DetailsHousesPage;
+
+
