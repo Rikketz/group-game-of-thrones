@@ -43,13 +43,14 @@ export default function CharacterPages() {
         </div>
         <div className="charactersFlags">
           <MenuConCasa/>
-      </div>
+        </div>
       </div>
 
     </div>
     <div className="charactersFlexCharacters">
       
-      <SimpleBar style={{ width:'95%', height: 500 }}>
+      <SimpleBar className="charactersSimpleBar">
+
       <div className="charactersFlexImage">
         {CharactersFilter.map((character) => (
           <div key={character.id} className="charactersCharacter">
