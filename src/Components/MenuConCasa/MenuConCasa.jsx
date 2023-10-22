@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 
 
 
-export default function Menu () {
+export default function MenuConCasa () {
     const {i18n} = useTranslation();
     const changeLanguage = (lng) =>{
         i18n.changeLanguage(lng)

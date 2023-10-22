@@ -11,7 +11,7 @@ return (<>
     <div className="divLinksFooter">
         <Link className="casas" to="/characters">{t('translated-PERSONAJES')}</Link>
         <Link className="casas" to="/houses">{t('translated-CASAS')}</Link>
-        <Link className="casas" to="/cronologia">{t('translated-CRONOLOGIA')}</Link>
+        <Link className="casas" to="/chronology">{t('translated-CRONOLOGIA')}</Link>
     </div>
 </>)
 
