@@ -1,0 +1,17 @@
+.logos{  
+    margin-left: 70%; 
+    display:flex;
+    justify-content: flex-end;
+    margin-top: 1%;
+    width: 50%;
+
+}
+.spain{
+    width: 5%;
+    display:flex;
+    margin-right: 5%;
+}
+.uk{
+    width: 5%;   
+    display:flex;
+}
